@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educación Financiera | Inversión Minera</title>
+  <meta name="description" content="Educación financiera para inversionistas. Descubra su perfil, aprenda por qué los bienes raíces construyen patrimonio y acceda a guías gratuitas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰️</text></svg>">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    .blog-hero {
+      background: var(--color-navy);
+      padding: 8rem 0 4rem;
+      text-align: center;
+    }
+    .blog-hero__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .blog-hero__back:hover { color: var(--color-copper-light); }
+    .blog-hero__back svg { width: 16px; height: 16px; }
+    .blog-hero__eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-copper-light);
+      margin-bottom: 1rem;
+    }
+    .blog-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 1rem;
+      max-width: 640px;
+      line-height: 1.2;
+    }
+    .blog-hero__lead {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .blog-content {
+      background: var(--surface);
+      padding: 4rem 0 5rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .blog-cta {
+      background: var(--color-navy-deep);
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .blog-cta__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .blog-cta__text {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .blog-footer {
+      background: var(--color-navy);
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    .blog-footer p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      margin: 0;
+    }
+    .blog-footer a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+    }
+    .blog-footer a:hover { color: var(--color-copper-light); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../assets/images/logo-inversion-minera.png" alt="Inversión Minera" class="header__logo-img" height="44">
+      </a>
+      <div class="nav__desktop">
+        <a href="../index.html#proyectos" class="nav__link">Proyectos</a>
+        <a href="../index.html#rentabilidad" class="nav__link">Calculadora</a>
+        <a href="../index.html#formulario" class="btn btn--primary btn--sm">Solicitar Información</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav" aria-label="Navegación principal">
+    <div class="nav__drawer-header">
+      <span class="nav__drawer-title">Menú de Navegación</span>
+      <button class="nav__drawer-close" id="navClose" aria-label="Cerrar menú">✕</button>
+    </div>
+    <a href="../index.html#proyectos" class="nav__link">Proyectos</a>
+    <a href="../index.html#rentabilidad" class="nav__link">Calculadora</a>
+    <a href="../index.html#faq" class="nav__link">Preguntas Frecuentes</a>
+    <a href="../index.html#formulario" class="btn btn--primary nav__drawer-cta">Solicitar Información</a>
+  </nav>
+  <div class="nav__backdrop" id="navBackdrop"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="blog-hero">
+      <div class="container" style="text-align:center;">
+        <a href="../index.html" class="blog-hero__back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Volver al sitio principal
+        </a>
+        <span class="blog-hero__eyebrow">Educación Financiera</span>
+        <h1 class="blog-hero__title">Invierta con información y visión.</h1>
+        <p class="blog-hero__lead">Descubra su perfil de inversionista, entienda por qué los bienes raíces construyen patrimonio y acceda a guías gratuitas para tomar mejores decisiones.</p>
+      </div>
+    </section>
+
+    <!-- 1. PERFIL DEL INVERSIONISTA -->
+    <section class="quiz-section" id="perfil-inversionista">
+      <div class="container">
+        <span class="eyebrow reveal">Perfil del Inversionista</span>
+        <h2 class="section-title reveal">¿Qué busca con su inversión?</h2>
+        <p class="quiz-section__lead reveal">Seleccione el objetivo que mejor lo describe y le mostraremos el proyecto más adecuado para usted.</p>
+        <div class="quiz-grid reveal" id="quizOptions">
+          <button class="quiz-opt" data-target="capital" onclick="quizSelect(this)">
+            <span class="quiz-opt__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <strong>Asegurar mi capital</strong>
+            <span>Proteger ahorros de la inflación</span>
+          </button>
+          <button class="quiz-opt" data-target="vivienda" onclick="quizSelect(this)">
+            <span class="quiz-opt__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <strong>Segunda vivienda</strong>
+            <span>Un lugar propio para descansar o jubilarme</span>
+          </button>
+          <button class="quiz-opt" data-target="arriendo" onclick="quizSelect(this)">
+            <span class="quiz-opt__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <strong>Ingreso por arriendo</strong>
+            <span>Generar ingresos turísticos pasivos</span>
+          </button>
+          <button class="quiz-opt" data-target="patrimonio" onclick="quizSelect(this)">
+            <span class="quiz-opt__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <strong>Patrimonio familiar</strong>
+            <span>Dejar un activo real a mi familia</span>
+          </button>
+        </div>
+        <div class="quiz-result" id="quizResult" hidden>
+          <div class="quiz-result__inner">
+            <span class="quiz-result__label" id="quizResultLabel"></span>
+            <h3 class="quiz-result__title" id="quizResultTitle"></h3>
+            <p class="quiz-result__desc" id="quizResultDesc"></p>
+            <div class="quiz-result__chips" id="quizResultChips"></div>
+            <div class="quiz-result__actions">
+              <a href="../index.html#proyectos" class="btn btn--primary btn--sm">Ver proyectos recomendados</a>
+              <button class="btn btn--ghost btn--sm" onclick="quizReset()">Cambiar respuesta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ¿POR QUÉ INVERTIR? -->
+    <section class="blog-content">
+      <div class="container">
+        <div style="text-align:center; max-width:640px; margin: 0 auto 2.5rem;">
+          <span class="eyebrow" style="display:block;">Educación Financiera</span>
+          <h2 class="section-title">Tres razones para diversificar en activos reales</h2>
+          <p style="margin: 0.75rem 0 0; color: var(--on-surface-variant); font-size:1.05rem; line-height:1.7;">No concentre todos sus ahorros en un solo instrumento. Combinar depósitos a plazo, APV y bienes raíces reduce el riesgo total de su portafolio y mejora el rendimiento ajustado.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="edu-card">
+            <span class="edu-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/><circle cx="12" cy="12" r="4"/></svg>
+            </span>
+            <h3>Protección frente a la inflación</h3>
+            <p>La tierra no se devalúa con la impresión de dinero. Históricamente, los bienes raíces superan la inflación en el mediano y largo plazo, preservando el poder adquisitivo de sus ahorros.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </span>
+            <h3>Generación de patrimonio</h3>
+            <p>Un terreno con rol propio es un activo real inscrito a su nombre. A diferencia de instrumentos financieros, no puede desaparecer de un día para otro. Es patrimonio concreto y transferible.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <h3>Potencial de valorización</h3>
+            <p>Las zonas turísticas y de alto crecimiento como el norte chico y el sur de Chile presentan plusvalías proyectadas muy superiores a los instrumentos tradicionales de ahorro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BIBLIOTECA DEL INVERSIONISTA -->
+    <section class="biblioteca" id="biblioteca">
+      <div class="container">
+        <span class="eyebrow reveal">Biblioteca del Inversionista</span>
+        <h2 class="section-title reveal">Tome mejores decisiones con información de calidad.</h2>
+        <p class="biblioteca__lead reveal">Acceda a nuestras guías gratuitas. Solo necesita su correo electrónico.</p>
+        <div class="biblioteca__grid">
+          <article class="bib-card reveal">
+            <span class="bib-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </span>
+            <div class="bib-card__body">
+              <h3>Cómo invertir en terrenos en Chile</h3>
+              <p>Guía práctica: documentos, pasos y errores a evitar en su primera inversión.</p>
+            </div>
+            <a href="../assets/pdfs/guia-1-invertir-terrenos-chile.pdf" target="_blank" rel="noopener" class="btn btn--primary btn--sm bib-card__cta">↓ Descargar guía</a>
+          </article>
+          <article class="bib-card reveal">
+            <span class="bib-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </span>
+            <div class="bib-card__body">
+              <h3>Cómo evaluar una inversión inmobiliaria</h3>
+              <p>Las 4 variables clave y cómo comparar dos oportunidades de forma objetiva.</p>
+            </div>
+            <a href="../assets/pdfs/guia-2-evaluar-inversion-inmobiliaria.pdf" target="_blank" rel="noopener" class="btn btn--primary btn--sm bib-card__cta">↓ Descargar guía</a>
+          </article>
+          <article class="bib-card reveal">
+            <span class="bib-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+            </span>
+            <div class="bib-card__body">
+              <h3>Factores que impulsan la plusvalía</h3>
+              <p>Por qué zonas como La Serena y Los Lagos tienen alto potencial de valorización.</p>
+            </div>
+            <button class="btn btn--primary btn--sm bib-card__cta" onclick="bibDownload('plusvalia')">↓ Descargar guía</button>
+          </article>
+          <article class="bib-card reveal">
+            <span class="bib-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div class="bib-card__body">
+              <h3>Turismo y rentabilidad inmobiliaria</h3>
+              <p>Cómo funciona el arriendo vacacional y qué zonas generan mejores retornos.</p>
+            </div>
+            <button class="btn btn--primary btn--sm bib-card__cta" onclick="bibDownload('turismo')">↓ Descargar guía</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Biblioteca -->
+    <div class="bib-modal" id="bibModal" role="dialog" aria-modal="true" aria-labelledby="bibModalTitle" hidden>
+      <div class="bib-modal__panel">
+        <button class="modal__close" id="bibModalClose" onclick="bibModalClose()" aria-label="Cerrar">✕</button>
+        <h3 id="bibModalTitle">Descargar guía gratuita</h3>
+        <p>Ingrese su correo y le enviamos la guía de inmediato.</p>
+        <form class="bib-modal__form" onsubmit="bibSubmit(event)">
+          <input type="hidden" id="bibGuia" value="">
+          <label class="form__field">
+            <span>Nombre</span>
+            <input type="text" id="bibNombre" required placeholder="Su nombre">
+          </label>
+          <label class="form__field">
+            <span>Correo electrónico</span>
+            <input type="email" id="bibCorreo" required placeholder="correo@ejemplo.cl">
+          </label>
+          <button type="submit" class="btn btn--primary btn--block">Enviar y descargar</button>
+          <p style="font-size:0.75rem;color:var(--on-surface-variant);margin-top:0.5rem;text-align:center;">Sus datos se usan solo para enviarle la guía. Sin spam.</p>
+        </form>
+        <div class="bib-modal__success" id="bibSuccess" hidden></div>
+      </div>
+    </div>
+
+    <!-- CTA FINAL -->
+    <section class="blog-cta">
+      <div class="container">
+        <h2 class="blog-cta__title">¿Listo para dar el siguiente paso?</h2>
+        <p class="blog-cta__text">Conozca los proyectos disponibles y solicite información sin compromiso.</p>
+        <a href="../index.html#proyectos" class="btn btn--primary">Ver proyectos disponibles</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="blog-footer">
+    <div class="container">
+      <p>© 2026 Inversión Minera &nbsp;·&nbsp;
+        <a href="politica-privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a>
+        &nbsp;·&nbsp;
+        <a href="terminos-condiciones.html" target="_blank" rel="noopener">Términos y Condiciones</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+  <script>
+// ── Quiz ────────────────────────────────────────────────────────────────
+var quizData = {
+  capital:    { label: 'Perfil: Preservación de capital',    title: 'Recomendamos ambos proyectos',             desc: 'Invertir en bienes raíces protege sus ahorros de la inflación. Ambos fundos ofrecen activos tangibles con rol propio y plusvalía proyectada del 30% anual.',                                   chips: ['Fundo Alto Nogales — La Serena','Fundo Mirador Los Volcanes — Puerto Octay'] },
+  vivienda:   { label: 'Perfil: Segunda vivienda',           title: 'Recomendamos Proyecto Norte — La Serena',  desc: 'Clima mediterráneo con más de 300 días de sol, alta conectividad y cercanía a servicios. Ideal para quienes buscan un lugar propio fuera del norte minero.',                                  chips: ['Fundo Alto Nogales — La Serena, Coquimbo'] },
+  arriendo:   { label: 'Perfil: Rentabilidad turística',     title: 'Recomendamos Proyecto Sur — Puerto Octay', desc: 'Zona de alta demanda turística rodeada de lagos y volcanes. Potencial de ingreso mensual vía Airbnb estimado en $1.000.000–$2.000.000 CLP.',                                               chips: ['Fundo Mirador Los Volcanes — Puerto Octay, Lagos'] },
+  patrimonio: { label: 'Perfil: Construcción de patrimonio', title: 'Recomendamos ambos proyectos',             desc: 'Títulos individuales con rol único, subdivisión aprobada y acompañamiento legal hasta la inscripción. Un legado real y transferible para su familia.',                                      chips: ['Fundo Alto Nogales — La Serena','Fundo Mirador Los Volcanes — Puerto Octay'] }
+};
+function quizSelect(btn) {
+  document.querySelectorAll('.quiz-opt').forEach(function(b){ b.classList.remove('quiz-opt--active'); });
+  btn.classList.add('quiz-opt--active');
+  var d = quizData[btn.dataset.target];
+  document.getElementById('quizResultLabel').textContent = d.label;
+  document.getElementById('quizResultTitle').textContent = d.title;
+  document.getElementById('quizResultDesc').textContent  = d.desc;
+  document.getElementById('quizResultChips').innerHTML   = d.chips.map(function(c){ return '<span class="result-chip">'+c+'</span>'; }).join('');
+  var res = document.getElementById('quizResult');
+  res.hidden = false;
+  res.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+function quizReset() {
+  document.querySelectorAll('.quiz-opt').forEach(function(b){ b.classList.remove('quiz-opt--active'); });
+  document.getElementById('quizResult').hidden = true;
+}
+
+// ── Biblioteca ──────────────────────────────────────────────────────────
+var currentGuia = '';
+var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbynw1D4u_BHivWVqoeC22OPxvxyl92aTQ2IEtVwCZLNJFp35g8IuQZrAPu55kJad4Mflw/exec';
+var WA_NUMBER  = '56987332569';
+var guiaLabels = {
+  'terrenos': 'Guía 1 – Cómo invertir en terrenos en Chile',
+  'evaluar':  'Guía 2 – Cómo evaluar una inversión inmobiliaria',
+  'plusvalia': 'Guía 3 – Factores que impulsan la plusvalía',
+  'turismo':  'Guía 4 – Turismo y rentabilidad inmobiliaria'
+};
+var guiaPdfs = {
+  'terrenos': 'assets/pdfs/guia-1-invertir-terrenos-chile.pdf',
+  'evaluar':  'assets/pdfs/guia-2-evaluar-inversion-inmobiliaria.pdf',
+  'plusvalia': null,
+  'turismo':  null
+};
+function bibDownload(guia) {
+  currentGuia = guia;
+  document.getElementById('bibGuia').value = guia;
+  document.getElementById('bibSuccess').hidden = true;
+  var form = document.querySelector('.bib-modal__form');
+  if (form) form.style.display = '';
+  document.getElementById('bibModal').hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+function bibModalClose() {
+  document.getElementById('bibModal').hidden = true;
+  document.body.style.overflow = '';
+}
+function bibSubmit(e) {
+  e.preventDefault();
+  var nombre    = document.getElementById('bibNombre').value.trim();
+  var correo    = document.getElementById('bibCorreo').value.trim();
+  var guiaLabel = guiaLabels[currentGuia] || currentGuia;
+  var pdfPath   = guiaPdfs[currentGuia];
+  document.querySelector('.bib-modal__form').style.display = 'none';
+  var waMsg = encodeURIComponent(
+    '¡Hola! Soy ' + nombre + ', acabo de solicitar la "' + guiaLabel +
+    '" en su sitio web. Mi correo es ' + correo + '. ¿Me pueden orientar?'
+  );
+  var successEl = document.getElementById('bibSuccess');
+  successEl.innerHTML =
+    '<p style="margin-bottom:0.75rem">¡Listo! Su solicitud fue recibida.</p>' +
+    '<p style="font-size:0.85rem;color:var(--on-surface-variant);margin-bottom:1.25rem;">Le enviaremos la guía a <strong>' + correo + '</strong> a la brevedad.</p>' +
+    '<a href="https://wa.me/' + WA_NUMBER + '?text=' + waMsg + '" target="_blank" rel="noopener" class="btn btn--primary btn--block">Continuar por WhatsApp</a>';
+  successEl.hidden = false;
+  if (pdfPath) { window.open(pdfPath, '_blank'); }
+  fetch(SHEETS_URL, {
+    method: 'POST',
+    body: JSON.stringify({ nombre: nombre, correo: correo, guia: guiaLabel }),
+    headers: { 'Content-Type': 'application/json' }
+  }).catch(function(){});
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') bibModalClose();
+});
+  </script>
+</body>
+</html>
