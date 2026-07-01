@@ -2392,3 +2392,13 @@ section { padding-block: var(--space-8); scroll-margin-top: 6rem; }
   color: #fff;
 }
 .modal__close--video:hover { background: rgba(255,255,255,0.3); }
+
+.modal__video-caption {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-2);
+}
