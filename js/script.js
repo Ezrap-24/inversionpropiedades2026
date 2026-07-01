@@ -162,6 +162,31 @@
   });
 
   /* ---------------------------------------------------
+     7b. MODAL VIDEO (hero)
+  --------------------------------------------------- */
+  var videoModal = document.getElementById('videoModal');
+  var videoModalClose = document.getElementById('videoModalClose');
+  var openVideoModalBtn = document.getElementById('openVideoModal');
+  var heroVideo = document.getElementById('heroVideo');
+  function openVideoModal() {
+    videoModal.classList.add('is-open');
+    videoModal.setAttribute('aria-hidden', 'false');
+  }
+  function closeVideoModal() {
+    videoModal.classList.remove('is-open');
+    videoModal.setAttribute('aria-hidden', 'true');
+    if (heroVideo) heroVideo.pause();
+  }
+  if (openVideoModalBtn) openVideoModalBtn.addEventListener('click', openVideoModal);
+  if (videoModalClose) videoModalClose.addEventListener('click', closeVideoModal);
+  if (videoModal) videoModal.addEventListener('click', function (e) {
+    if (e.target === videoModal) closeVideoModal();
+  });
+  window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && videoModal && videoModal.classList.contains('is-open')) closeVideoModal();
+  });
+
+  /* ---------------------------------------------------
      8. MODALES LEGALES (Privacidad y Terminos)
   --------------------------------------------------- */
   function makeLegalModal(modalId, closeId, openBtnId) {
