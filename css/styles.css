@@ -1498,6 +1498,11 @@ section { padding-block: var(--space-8); scroll-margin-top: 6rem; }
   background: #000;
   box-shadow: 0 16px 48px rgba(0,0,0,0.25);
 }
+.form-section__video-wrap {
+  margin-top: var(--space-8);
+  display: flex;
+  justify-content: center;
+}
 
 .form-section__perks {
   list-style: none;
