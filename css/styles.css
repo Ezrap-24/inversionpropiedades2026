@@ -2344,3 +2344,34 @@ section { padding-block: var(--space-8); scroll-margin-top: 6rem; }
 /* ── Reduce gap between Biblioteca and FAQ (same bg color) ── */
 .biblioteca { padding-bottom: 2rem; }
 .faq { padding-top: 2.5rem; }
+
+/* ── Banner Sistema Constructivo (Panel SIP) ── */
+.sip-banner {
+  margin-top: var(--space-4);
+  background: var(--color-navy);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+@media (max-width: 680px) {
+  .sip-banner { grid-template-columns: 1fr; padding: var(--space-4); }
+}
+.sip-banner__title { color: #fff; font-size: 1.3rem; margin-bottom: var(--space-2); }
+.sip-banner__desc { color: rgba(255,255,255,0.72); font-size: 0.9rem; line-height: 1.6; margin-bottom: var(--space-3); }
+.sip-banner__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+.sip-banner__list li { color: rgba(255,255,255,0.9); font-size: 0.85rem; padding-left: 1.4rem; position: relative; }
+.sip-banner__list li::before {
+  content: "✓";
+  position: absolute; left: 0; top: 0;
+  color: var(--color-copper-light);
+  font-weight: 700;
+}
+.sip-banner__media { display: flex; justify-content: center; }
+.sip-banner__media img {
+  width: 100%; max-width: 320px;
+  border-radius: var(--radius-md);
+  background: #fff;
+}
